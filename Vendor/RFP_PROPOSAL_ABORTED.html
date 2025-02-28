@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Corporate Invitation</title>
+    <title>RFP Process Aborted</title>
   </head>
   <body
     style="
@@ -23,27 +23,22 @@
         border-radius: 8px;
       "
     >
-     <div style="text-align: center">
-        <img src="https://tcs-dev-public.s3.eu-west-2.amazonaws.com/corporate/image/amsvc2ism6etsws3.png" width="150spx" style="margin-bottom: 20px" />
-      </div>
+    <div style="text-align: center">
+      <img src="https://tcs-dev-public.s3.eu-west-2.amazonaws.com/corporate/image/amsvc2ism6etsws3.png" width="150spx" style="margin-bottom: 20px" />
+    </div>
       <div style="font-size: 16px; line-height: 1.6; color: #333333">
         <p>Dear {{USER_NAME}},</p>
         <p>
-          We are pleased to invite you to join Talent Tender users. The following link will take you to the log in page.
-        </p>
+          We regret to inform you that Talent Tender has decided to abort its RFP process for the following project: {{PROJECT_NAME}}
         <p>
-          <a href="{{LOGIN_URL}}" style="color: #0066cc; text-decoration: none"
-          >{{LOGIN_URL}}</a
-        >
+          For any further details, please contact Talent Tender.
         </p>
         <p style="margin-top: 20px; font-size: 16px">
-          A warm welcome to Talent Tender !<br />Talent Tender team
+          Best regards,<br />Talent Tender Team
         </p>
-        <div style="margin-top: 20px">
-          <p>
-            <a href="mailto:{{HELP_MAIL}}">TalentTenderHelp</a>
-          </p>
-        </div>
+        <p style="margin-top: 20px">
+          <a href="mailto:{{HELP_MAIL}}">TalentTenderHelp</a>
+        </p>
       </div>
       <div
         style="
@@ -53,7 +48,7 @@
           font-size: 14px;
         "
       >
-        &copy; {{CURRENT_YEAR}} Talent Tender. All rights reserved.
+        &copy; {{CURRENT_YEAR}} Talent Tender, All rights reserved.
       </div>
     </div>
   </body>

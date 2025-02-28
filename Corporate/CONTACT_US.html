@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form Submission</title>
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      background-color: #2c2f3f;
+      margin: 0;
+      padding: 30px;
+      margin-top: 30px;
+    "
+  >
+    <div
+      style="
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+      "
+    >
+      <div style="text-align: center">
+        <img
+          src="https://tcs-dev-public.s3.eu-west-2.amazonaws.com/corporate/image/amsvc2ism6etsws3.png"
+          width="150px"
+          style="margin-bottom: 20px"
+        />
+      </div>
+      <div style="font-size: 16px; line-height: 1.6; color: #333333">
+        <p>Dear Admin,</p>
+        <p>
+          You have received a new contact form submission with the following details:
+        </p>
+        <table
+          style="
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+          "
+        >
+          <tr style="background-color: #f2f2f2">
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: left">
+              First Name
+            </th>
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: left">
+              Last Name
+            </th>
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: left">
+              Work Mail
+            </th>
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: left">
+              Subject
+            </th>
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: left">
+              Message
+            </th>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #ddd; padding: 8px">{{FIRSTNAME}}</td>
+            <td style="border: 1px solid #ddd; padding: 8px">{{LASTNAME}}</td>
+            <td style="border: 1px solid #ddd; padding: 8px">{{WORKMAIL}}</td>
+            <td style="border: 1px solid #ddd; padding: 8px">{{SUBJECT}}</td>
+            <td style="border: 1px solid #ddd; padding: 8px">{{MESSAGE}}</td>
+          </tr>
+        </table>
+        <p style="margin-top: 20px; font-size: 16px">
+          Best Regards,<br />Talent Tender Team
+        </p>
+      </div>
+      <div
+        style="
+          margin-top: 30px;
+          text-align: center;
+          color: #999999;
+          font-size: 14px;
+        "
+      >
+        &copy; {{CURRENT_YEAR}} Talent Tender. All rights reserved.
+      </div>
+    </div>
+  </body>
+</html>
