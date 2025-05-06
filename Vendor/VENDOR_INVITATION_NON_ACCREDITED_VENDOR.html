@@ -10,31 +10,32 @@
 <body style="font-family: Arial, sans-serif; background-color: #2c2f3f; margin: 0; padding: 30px; margin-top: 30px;">
   <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px; border-radius: 8px;">
     <div style="text-align: center">
-      <img src="https://tcs-dev-public.s3.eu-west-2.amazonaws.com/corporate/image/amsvc2ism6etsws3.png" width="150spx"
+      <img src="https://materials.talenttender.com/images/logo.png" width="150spx"
         style="margin-bottom: 20px" />
-
     </div>
     <div style="font-size: 16px; line-height: 1.6; color: #333333;">
       <p>Dear {{USER_NAME}},</p>
       <p class="text">Congratulations!</p>
-      <p class="text">You have been invited by a Talent Tender corporate member to bid.</p>
-      <p class="text">We wish you the best of luck</p>
-      <p class="text">You and your organization are not a member of Talent Tender*.</p>
+      <p class="text">You have been invited by Temasek to submit a fee proposal on Talent Tender. Talent Tender is Temasek's talent capacity management platform.</p>
+      <p class="text">We wish you the best of luck.</p>
+      <p class="text">You and your organization are not a member of Talent Tender.</p>
       <p class="text">Access Talent Tender by <a href="{{SIGN_UP}}">creating an account</a>
       </p>
       <p class="text">
         With credentials below:
       </p>
-      <p class="text">Email address: {{USER_EMAIL}}
-      </p>
-      <p class="text">Access Code: {{ACCESS_CODE}}</p>
+      <p><strong>Email:</strong> <code>{{USER_EMAIL}}</code>
+        <br />
+      <strong>Access Code:</strong> <code>{{ACCESS_CODE}}</code></p>
       <p style="margin-top: 20px; font-size: 16px;">
         Wish you a nice day !<br />
         Talent Tender team
       </p>
-      <div style="margin-top: 30px;">
-        <p>
-          <a href="mailto:{{HELP_MAIL}}">TalentTenderHelp</a>
+      <div style="margin-top: 20px;">
+        <p style="text-align: center;">
+          please contact us for technical queries at: <a href="mailto:{{TECH}}">{{TECH}}</a>,
+          <br>
+          for anything else at: <a href="mailto:{{NON_TECH}}">{{NON_TECH}}</a>
         </p>
       </div>
     </div>
@@ -43,5 +44,4 @@
     </div>
   </div>
 </body>
-
 </html>

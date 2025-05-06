@@ -24,13 +24,13 @@
       "
     >
     <div style="text-align: center">
-      <img src="https://tcs-dev-public.s3.eu-west-2.amazonaws.com/corporate/image/amsvc2ism6etsws3.png" width="150spx" style="margin-bottom: 20px" />
+      <img src="https://materials.talenttender.com/images/logo.png" width="150spx" style="margin-bottom: 20px" />
     </div>
       <div style="font-size: 16px; line-height: 1.6; color: #333333">
         <p>Dear {{USER_NAME}},</p>
-        <p>Congratulations !  You are the winning bidder for project {{PROJECT_NAME}}.</p>
+        <p>Congratulations!  You are the winning bidder for project {{PROJECT_NAME}}.</p>
         <p>
-          Talent Tender will contact you in due course with follow up instructions.
+          Temasek will contact you in due course with follow up instructions.
         </p>
         <p>
           Your scoring card is available  below:
@@ -43,34 +43,37 @@
               border-collapse: collapse;
               font-size: 14px;
               color: #333;
+              margin-top: 10px;
+              margin-bottom: 20px;
             "
           >
             <thead>
-              <tr style="background-color: #e3e3e3">
-                <th style="padding: 10px; border: 1px solid #ccc">Commercial</th>
-                <th style="padding: 10px; border: 1px solid #ccc">Business profile(s) Score</th>
-                <th style="padding: 10px; border: 1px solid #ccc">
-                  Total Score
-                </th>
-              
+              <tr style="background-color: #f0f0f0">
+                <th style="padding: 10px; border: 1px solid #ccc; text-align: left;">Criteria</th>
+                <th style="padding: 10px; border: 1px solid #ccc; text-align: left;">Scale of 1-5 (5 being the highest score)</th>
+              </tr>
             </thead>
             <tbody>
               <tr>
-                <td style="padding: 10px; text-align: center; border: 1px solid #ccc">{{COMMERCIAL}}</td>
-                <td style="padding: 10px; text-align: center; border: 1px solid #ccc">{{CV_SCORE}}</td>
-                <td style="padding: 10px; text-align: center; border: 1px solid #ccc">{{TOTAL_AVERAGE}}</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">Commercial</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">{{COMMERCIAL}}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ccc;">Business profile(s) Score</td>
+                <td style="padding: 10px; border: 1px solid #ccc;">{{CV_SCORE}}</td>
               </tr>
             </tbody>
           </table>
-          
           </p>
         </p>
         <p style="margin-top: 20px; font-size: 16px">
           Wishing you a successful collaboration !<br />Talent Tender team
         </p>
         <div style="margin-top: 20px">
-          <p>
-            <a href="mailto:{{HELP_MAIL}}">TalentTenderHelp</a>
+          <p style="text-align: center;">
+            please contact us for technical queries at: <a href="mailto:{{TECH}}">{{TECH}}</a>,
+            <br>
+            for anything else at: <a href="mailto:{{NON_TECH}}">{{NON_TECH}}</a>
           </p>
         </div>
       </div>

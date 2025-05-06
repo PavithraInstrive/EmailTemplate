@@ -12,31 +12,29 @@
       style="max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px; border-radius: 8px;"
     >
       <div style="text-align: center">
-        <img src="https://tcs-dev-public.s3.eu-west-2.amazonaws.com/corporate/image/amsvc2ism6etsws3.png" width="150spx" style="margin-bottom: 20px" />
+        <img src="https://materials.talenttender.com/images/logo.png" width="150spx" style="margin-bottom: 20px" />
 
       </div>
       <div style="font-size: 16px; line-height: 1.6; color: #333333;">
         <p>Dear {{USER_NAME}},</p>
         <p class="text">Congratulations!</p>
-        <p class="text">Your application has been approved. Your organization is now a member of Talent Tender.</p>
-        <p class="text">Access Talent Tender Log In page</p>
+        <p class="text">We are pleased to invite you to join Talent Tender.</p>
+        <p class="text">Access Talent Tender Log in page by clicking on the following link:<a href="{{LOGIN_URL}}" style="color: #0066cc; text-decoration: none"
+          >{{LOGIN_URL}}</a
+        ></p>
         <p class="text">Your credentials are:</p>
         <p class="text">Username: {{USER_EMAIL}}</p>
         <p class="text">
           <a href="{{RESET_PASSWORD_LINK}}">Click here</a> to set your password
         </p>
-        <p class="text">Use the link below to log in:</p> 
-        <p>
-          <a href="{{LOGIN_URL}}" style="color: #0066cc; text-decoration: none"
-          >{{LOGIN_URL}}</a
-        >
-        </p>
         <p style="margin-top: 20px; font-size: 16px">
           A warm welcome to Talent Tender !<br />Talent Tender team
         </p>
         <div style="margin-top: 20px;">
-          <p>
-            <a href="mailto:{{HELP_MAIL}}">TalentTenderHelp</a>
+          <p style="text-align: center;">
+            please contact us for technical queries at: <a href="mailto:{{TECH}}">{{TECH}}</a>,
+            <br>
+            for anything else at: <a href="mailto:{{NON_TECH}}">{{NON_TECH}}</a>
           </p>
         </div>
       </div>

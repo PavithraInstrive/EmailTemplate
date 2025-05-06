@@ -8,19 +8,21 @@
   <body style="font-family: Arial, sans-serif; background-color: #2c2f3f; margin: 0; padding: 30px; margin-top: 70px;">
     <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px; border-radius: 8px; margin-top: 80px;">
       <div style="text-align: center">
-        <img src="https://tcs-dev-public.s3.eu-west-2.amazonaws.com/corporate/image/amsvc2ism6etsws3.png" width="150px" style="margin-bottom: 20px" />
+        <img src="https://materials.talenttender.com/images/logo.png" width="150px" style="margin-bottom: 20px" />
       </div>
       <div style="font-size: 16px; line-height: 1.6; color: #333333;">
         <p>Dear {{USER_NAME}},</p>
         <p>
-          You have been removed from the user group {{GROUP_NAME}}.If you have any questions or need assistance, please reach out to your group administrator.
+          You have been removed from the user group {{GROUP_NAME}}.If you have any questions or need assistance, please reach out to your group <a href='mailto:{{TEAM_MAIL}}'>administrator</a>.
         </p>
         <p style="margin-top: 20px; font-size: 16px">
           Best regards,<br />Talent Tender Team
         </p>
-        <div style="margin-top: 30px">
-          <p>
-            <a href="mailto:{{HELP_MAIL}}">TalentTenderHelp</a>
+        <div style="margin-top: 20px">
+          <p style="text-align: center;">
+            please contact us for technical queries at: <a href="mailto:{{TECH}}">{{TECH}}</a>,
+            <br>
+            for anything else at: <a href="mailto:{{NON_TECH}}">{{NON_TECH}}</a>
           </p>
         </div>
       </div>
